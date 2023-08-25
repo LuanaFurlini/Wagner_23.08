@@ -65,3 +65,90 @@ data_compra DATE,
 data_entrega DATE,
 
 primary key(n_nf)
+
+
+RT INTO fornecedores VALUES
+//fornecedores1
+(32456000110, "Industrias Maldonato Ltda",
+456789123, "Av. dos Embus", 1000,
+"rque Industrial", "Araras", "SP",
+5 (12) 35689-4587, "maldonado@maldonad.www.
+maldonado.ind.br");
+
+//fornecedores2
+(56578800810, "Industrias Sushi",
+478549367, "Av. Brasil", 1209,
+"Centro", "Campinas", "SP",
+4 (17) 4002-8922, "industriassushi@gmail.com.br");
+
+//fornecedores3
+(282409002, "Empresa livros travessa",
+456789123, "Av. Paulista" , 1324,
+"Santaela", "São Paulo", "SP",
+6 (14) 99267-3456, "livraria.travessa@gmail.com.br");
+
+
+
+RT INTO clientes VALUES
+//clientes1
+(54577386801, "cesar.cohen@gmail.com", 07/11/02,
+(17) 99145-2398, "Av. Alameda das Travessas",
+"Nemer", "Vila Pelicanos"
+);
+
+//clientes2
+(84833947801, "arnaldofritz@gmail.com", 16/05/91,
+(19) 99693-3592, "Av. augusto",
+"Centro", "Bebedouro"
+);
+
+//clientes3
+(50283902501, "jouijouki@gmail.com", 18/07/06,
+(13) 99173-5960, "Av. Orvoje",
+"Casa Verde", "Ribeirão"
+);
+
+
+
+RT INTO produtos VALUES
+//produtos1
+(09356732, "Mochila resistente e funcional para
+atividades ao ar livre e viagens urbanas", 
+"Equipamento de aventura", "4.0", "TrekPro 3000", 
+"verde floresta"
+);
+
+//produtos2
+(84721908, "Fones de ouvido premium com qualidade sonora 
+excepcional para mergulhar em músicas e podcasts", 
+"Acessórios de Áudio", "4.5", "SoundWave Pro 6000", 
+"prata metálica");
+
+//produtos3
+(31568974, "Cadeira ergonômica com design moderno e confortável
+para longas horas de trabalho ou estudo", "Móveis e Decoração", 
+"4.7", "ErgoComfort 2000", "preto carvão");
+
+
+
+RT INTO predidos VALUES
+//pedidos1
+(123456, 2500, 42, "Cartão de Crédito", 3);
+
+//pedidos2
+(789012, 1800, 38, 'PayPal', 2);
+
+//pedidos3
+(567890, 1200, 40, "Boleto Bancário", 5);
+
+
+
+RT INTO nf_vendas VALUES
+//nf_vendas 1
+(123456, 150, 2500, "2023-08-25", "2023-09-02");
+
+//nf_vendas 2
+(987654, 75, 1800, "2023-07-15", "2023-07-22");
+
+//nf_vendas 3
+(654321, 100, 3500, "2023-09-10", "2023-09-18");
