@@ -1,0 +1,67 @@
+//criar a base de dados
+create database loja;
+
+use loja;
+
+
+//criar tabela fornecedores
+create table fornecedores
+cnpj_ec decimal(14),
+razaosocial_ec varchar(50),
+inscEst_ec decimal(12),
+endereco_ec varchar(60),
+bairro_ec varchar(30),
+cidade_ec varchar(50),
+estado_ec char(2),
+telefone_ec varchar(20),
+email_ec varchar(60),
+site_ec varchar(50),
+
+primary key(cnpj_ec)
+
+
+//criar tabela clientes
+create table clientes
+cpf varchar(12),
+email varchar(35),
+data_nasc DATE,
+telefone varchar(20),
+endereco varchar(50),
+bairro varchar(30),
+cidade varchar(50),
+
+primary key(cpf)
+
+
+//criar tabela produtos
+create table produtos
+codProdutos INT,
+descricao varchar(50),
+categoria varchar(30),
+classificacao varchar(20),
+modelo varchar(45),
+cor varchar(45)
+
+primary key(codProdutos)
+
+
+//criar tabela pedidos
+crate table pedidos 
+id_pedido INT,
+preco INT,
+numeracao INT,
+forma_pagamento varchar(15),
+quantidade INT,
+
+primary key(id_pedidos)
+
+
+//criar tabela nf/vendas
+create table nf/vendas
+n_nf INT,
+frete INT,
+preco_total INT,
+data_compra DATE,
+data_entrega DATE,
+
+primary key(n_nf)
